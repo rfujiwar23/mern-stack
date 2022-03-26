@@ -1,6 +1,7 @@
 import main from '../assets/images/main-alternative.svg'
 import Wrapper from '../assets/wrappers/LandingPage'
 import {Logo} from '../components'
+import {Link} from 'react-router-dom'
 
 const Landing = () => {
   return (
@@ -13,7 +14,7 @@ const Landing = () => {
         <div className="info">
           <h1><span>Track</span> My Activity</h1>
           <p>I'm baby godard actually four dollar toast stumptown, normcore pitchfork coloring book offal gluten-free. Unicorn skateboard next level food truck flexitarian kitsch distillery kickstarter iPhone.</p>
-          <button className='btn btn-hero'>Login/Register</button>
+          <Link to='/register' className='btn btn-hero'>Login/Register</Link>
         </div>
         <img src={main} alt="activity tracker" className='main-img'/>
       </div>
