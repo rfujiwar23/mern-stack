@@ -29,7 +29,8 @@ const toggleMember = () => {
     console.log(e.target)
   }
 
-  return <Wrapper className='full-page'>
+  return (
+    <Wrapper className='full-page'>
     <form className='form' onSubmit={onSubmit}>
       <Logo />
       <h3>{values.isMember ? 'Log In' : 'Register' }</h3>
@@ -43,7 +44,7 @@ const toggleMember = () => {
           handleChange={handleChange}
         />
       )}
-      <FormRow type='text' name='name' value={values.name} handleChange={handleChange} />
+      {/* <FormRow type='text' name='name' value={values.name} handleChange={handleChange} /> */}
        {/* email input */}
       <FormRow type='email' name='email' value={values.email} handleChange={handleChange} />
         {/* password input */}
@@ -57,6 +58,7 @@ const toggleMember = () => {
       </p>
     </form>
   </Wrapper>
+  )
   
 }
 export default Register
